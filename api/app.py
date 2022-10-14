@@ -16,6 +16,10 @@ def cluster2():
 def cluster1():
     hello()
 
+@app.route("/")
+def cluster():
+    return "Hello, World!"
+
 
 def hello():
     instance_name = requests.get(instance_name_url).text
@@ -24,5 +28,5 @@ def hello():
 
 
 if __name__ == "_main_":
-    app.run(port=80)
+    app.run(host='0.0.0.0', port=80)
 
