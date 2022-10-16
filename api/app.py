@@ -11,7 +11,7 @@ def cluster2():
 
 @app.route("/cluster1")
 def cluster1():
-    return "Hello from Cluster1!"
+    return hello()
 
 @app.route("/")
 def cluster():
