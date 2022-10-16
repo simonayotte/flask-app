@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/cluster2")
 def cluster2():
-    return "Hello from Cluster2!"
+    return hello()
 
 @app.route("/cluster1")
 def cluster1():
@@ -15,7 +15,7 @@ def cluster1():
 
 @app.route("/")
 def cluster():
-    return "Hello, World!"
+    return hello()
 
 
 def hello():
